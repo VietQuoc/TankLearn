@@ -220,11 +220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7471893374112485762, guid: 5af5830b1749b474092c4bad5152ea48, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.21
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7471893374112485762, guid: 5af5830b1749b474092c4bad5152ea48, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.63
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7471893374112485762, guid: 5af5830b1749b474092c4bad5152ea48, type: 3}
       propertyPath: m_LocalPosition.z
@@ -258,10 +258,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7471893374112485763, guid: 5af5830b1749b474092c4bad5152ea48, type: 3}
-      propertyPath: audioClips.Array.data[2]
-      value: 
-      objectReference: {fileID: 8300000, guid: 1dc75f033614c4b37b6f9f4595cbd570, type: 3}
     - target: {fileID: 7471893374112485764, guid: 5af5830b1749b474092c4bad5152ea48, type: 3}
       propertyPath: m_Name
       value: GreenTank

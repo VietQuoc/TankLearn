@@ -536,7 +536,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
@@ -591,6 +591,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -4067,19 +4079,19 @@ TextureImporter:
       TankBackgroundSprite_5: 6436374816546156142
       TankBackgroundSprite_112: 5961355377906225171
       TankBackgroundSprite_127: 66566120867616782
-      TankBackgroundSprite_69: -5178399931522307669
       TankBackgroundSprite_111: 5558532510329715240
-      TankBackgroundSprite_27: 3356006167737618449
-      TankBackgroundSprite_71: -8459491556536301483
-      TankBackgroundSprite_51: 7975216692402346740
-      TankBackgroundSprite_96: 2672254078178394602
-      TankBackgroundSprite_92: 8377982264619264261
-      TankBackgroundSprite_114: -3739209924453868446
-      TankBackgroundSprite_106: 5967722752536181077
       TankBackgroundSprite_140: 330272291987168189
+      TankBackgroundSprite_71: -8459491556536301483
+      TankBackgroundSprite_69: -5178399931522307669
+      TankBackgroundSprite_114: -3739209924453868446
+      TankBackgroundSprite_96: 2672254078178394602
+      TankBackgroundSprite_106: 5967722752536181077
+      TankBackgroundSprite_51: 7975216692402346740
       TankBackgroundSprite_128: -7705301521831673499
-      TankBackgroundSprite_12: -1337431616833040055
+      TankBackgroundSprite_92: 8377982264619264261
       TankBackgroundSprite_160: 2410250134483051229
+      TankBackgroundSprite_12: -1337431616833040055
+      TankBackgroundSprite_27: 3356006167737618449
       TankBackgroundSprite_70: 7995163952082575967
       TankBackgroundSprite_50: 8304490539825832652
       TankBackgroundSprite_90: -3511405221398992265

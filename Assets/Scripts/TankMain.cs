@@ -123,9 +123,9 @@ public class TankMain : MonoBehaviour
     private void OnAttacked(Collider2D collision) {
         if (collision.gameObject.tag == "Bullet" && collision.gameObject.GetComponent<Bullet>().parent != gameObject)
         {
-            hp = hp - collision.gameObject.GetComponent<Bullet>().damage;
+            currentHp = currentHp - collision.gameObject.GetComponent<Bullet>().damage;
             collision.gameObject.GetComponent<Bullet>().OnAttack();
-            if (hp <= 0)
+            if (currentHp <= 0)
             {
                 anim.SetInteger("tankState", 2);
                 isDie = true;

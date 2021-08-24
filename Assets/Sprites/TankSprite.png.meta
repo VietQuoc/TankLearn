@@ -267,6 +267,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2068,6 +2069,88 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TankSprite_77: 2018694752848114233
+      TankSprite_15: 1751563005832341458
+      TankSprite_43: 5606618465683407764
+      TankSprite_64: 7027362018528481374
+      TankSprite_26: -5578314401866449003
+      TankSprite_58: 1347047164991375837
+      TankSprite_27: -1687970258936971848
+      TankSprite_56: 5923169032981988796
+      TankSprite_70: 2137298131784652053
+      TankSprite_25: -6396192215749722153
+      TankSprite_16: 8116134079561110418
+      TankSprite_46: 5092466424707595924
+      TankSprite_48: -2285558099504673404
+      TankSprite_65: 8385439580155858021
+      TankSprite_73: -2778710411090075080
+      TankSprite_8: 5152388617440411392
+      TankSprite_2: -113728044194113735
+      TankSprite_80: -4910487865146850301
+      TankSprite_44: -2656014862652254481
+      TankSprite_49: -2156477850131436757
+      TankSprite_61: -5222234801363906452
+      TankSprite_36: 9009893604725564078
+      TankSprite_41: 7896665834075927790
+      TankSprite_42: 5422251449777051137
+      TankSprite_20: -792216132219652133
+      TankSprite_21: -7303332808459068670
+      TankSprite_18: -4213749364331238877
+      TankSprite_45: 7256802543059245045
+      TankSprite_29: 943616943732514396
+      TankSprite_52: -6795412942479080061
+      TankSprite_22: 3969910792344976171
+      TankSprite_67: 7651371176680025360
+      TankSprite_34: -2675937059716605499
+      TankSprite_32: -4876624392150660141
+      TankSprite_12: 118809098333345286
+      TankSprite_40: 7786605024299472911
+      TankSprite_33: -6102204636020510293
+      TankSprite_7: 5203205061071142287
+      TankSprite_55: -4137396845528591726
+      TankSprite_74: -338783957791942825
+      TankSprite_75: 1133878710770093858
+      TankSprite_14: 899199601343304741
+      TankSprite_50: -2669372133680085641
+      TankSprite_31: 6518531912605764951
+      TankSprite_72: 3346716531768542738
+      TankSprite_28: -600363843532721771
+      TankSprite_39: 6281272622298821663
+      TankSprite_51: 9197910888490983630
+      TankSprite_30: 2804259789761323980
+      TankSprite_79: 5750978992065279744
+      TankSprite_1: -6184146742381758165
+      TankSprite_13: -4639494189759137635
+      TankSprite_62: -2590756705304393469
+      TankSprite_17: 6652090461903598277
+      TankSprite_60: 787165102528929342
+      TankSprite_19: -6924853500684687988
+      TankSprite_57: 7003977233862660023
+      TankSprite_11: -6184023987850667836
+      TankSprite_37: 978018203899948382
+      TankSprite_54: 8834309042492943446
+      TankSprite_63: -5267049459412564160
+      TankSprite_66: 5216115655736462695
+      TankSprite_35: -3791581422357527866
+      TankSprite_5: 7259939910263960180
+      TankSprite_23: -4864046156622678385
+      TankSprite_47: -6819099463709356994
+      TankSprite_53: 2832715052628940763
+      TankSprite_68: 3597710653630921836
+      TankSprite_59: 152096875150587220
+      TankSprite_38: -5321975005300433819
+      TankSprite_4: 8163682197398442607
+      TankSprite_10: 1573641386434324072
+      TankSprite_0: -794975277745631723
+      TankSprite_6: -7418568716375398924
+      TankSprite_9: 1571942140356936111
+      TankSprite_69: -3559945073663229125
+      TankSprite_3: -485613486862539089
+      TankSprite_71: -5780959741631427816
+      TankSprite_78: -6408886373881460333
+      TankSprite_24: -2472641659852238864
+      TankSprite_76: 3502932347283391560
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

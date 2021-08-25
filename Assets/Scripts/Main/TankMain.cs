@@ -36,7 +36,7 @@ public class TankMain : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        anim.SetInteger("tankState", 1);
+        anim.SetInteger("tankState", 0);
     }
 
     // Update is called once per frame

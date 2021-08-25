@@ -45,7 +45,7 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "BackGroundBox")
+        if (collision.gameObject.tag == "BackGroundBox" || collision.gameObject.tag == "Bullet")
         {
             OnAttack();
         }

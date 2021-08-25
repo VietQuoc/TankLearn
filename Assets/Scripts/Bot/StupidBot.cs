@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bot : MonoBehaviour
+public class StupidBot : MonoBehaviour
 {
     public float speed = 2.1f; // movement speed
     public string charactorName = "Bot"; // name
@@ -28,7 +28,6 @@ public class Bot : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip[] audioClips; // 0: shoot, 1: attacked, 2: destroy
     private Transform main;
-    public bool isFighting = false;
     private void Awake()
     {
         anim.GetComponent<Animator>();
@@ -49,7 +48,6 @@ public class Bot : MonoBehaviour
         if (!isDie)
         {
             RandomAction();
-            OnFindMain();
             ChangeRotation();
             ChangeAnimation();
         }
@@ -57,26 +55,30 @@ public class Bot : MonoBehaviour
 
     private void RandomAction()
     {
-        if (!isFighting) {
-            if (movingTime < Time.time)
+        if (movingTime < Time.time)
+        {
+            float randomTime = Random.Range(1, 10);
+            int randomAction = Random.Range(0, 12);
+            movingTime = randomTime + Time.time;
+            if (randomAction > 7)
             {
-                float randomTime = Random.Range(1, 10);
-                int randomAction = Random.Range(0, 12);
-                movingTime = randomTime + Time.time;
-                if (randomAction > 7)
-                {
-                    transformX = 0;
-                    transformY = 0;
-                }
-                else {
-                    transformX = directionList[randomAction, 0];
-                    transformY = directionList[randomAction, 1];
-                }
+                transformX = 0;
+                transformY = 0;
             }
-            float tempSpeed = speed;
-            if (transformX != 0 && transformY != 0) tempSpeed = speed / 2;
-            transform.Translate(new Vector2(transformX * tempSpeed, transformY * tempSpeed) * Time.deltaTime, Space.World);
+            else
+            {
+                transformX = directionList[randomAction, 0];
+                transformY = directionList[randomAction, 1];
+            }
         }
+        float tempSpeed = speed;
+        if (transformX != 0 && transformY != 0) tempSpeed = speed / 2;
+        if (Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            OnAttack();
+        }
+        transform.Translate(new Vector2(transformX * tempSpeed, transformY * tempSpeed) * Time.deltaTime, Space.World);
     }
 
     void ChangeRotation()
@@ -136,31 +138,6 @@ public class Bot : MonoBehaviour
         instanceBullet.GetComponent<Bullet>().transformY = directionY;
         instanceBullet.GetComponent<Bullet>().parent = gameObject;
         instanceBullet.GetComponent<Bullet>().speed = speed * 2;
-    }
-    private void OnFindMain() {
-        if (isFighting) {
-            float positionToMainX = transform.position.x - main.transform.position.x;
-            float positionToMainY = transform.position.y - main.transform.position.y;
-            if (Mathf.Abs(positionToMainX) > 0.4)
-            {
-                if (positionToMainX > 0) transformX = -1;
-                else transformX = 1;
-            }
-            else transformX = 0;
-            if (Mathf.Abs(positionToMainY) > 0.45) {
-                if (positionToMainY > 0) transformY = -1;
-                else transformY = 1;
-            } else transformY = 0;
-            if (Time.time > nextFire)
-            {
-                nextFire = Time.time + fireRate;
-                OnAttack();
-            }
-            float tempSpeed = speed;
-            if (transformX != 0 && transformY != 0) tempSpeed = speed / 2;
-            transform.Translate(new Vector2(transformX * tempSpeed, transformY * tempSpeed) * Time.deltaTime, Space.World);
-        }
-        
     }
     public void destroyObject()
     {

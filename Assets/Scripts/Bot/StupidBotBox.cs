@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BotBox : MonoBehaviour
+public class StupidBotBox : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         OnFaceWall(collision);
-        gameObject.GetComponentInParent<Bot>().OnAttacked(collision);
+        gameObject.GetComponentInParent<StupidBot>().OnAttacked(collision);
     }
 
     private void OnFaceWall(Collider2D collision)

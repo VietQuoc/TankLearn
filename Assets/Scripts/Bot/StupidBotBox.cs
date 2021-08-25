@@ -14,7 +14,7 @@ public class StupidBotBox : MonoBehaviour
     {
         if (collision.gameObject.tag == "BackGroundBox")
         {
-            gameObject.GetComponentInParent<Bot>().movingTime = 0f;
+            gameObject.GetComponentInParent<StupidBot>().movingTime = 0f;
         }
     }
 }

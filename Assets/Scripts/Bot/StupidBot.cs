@@ -138,6 +138,7 @@ public class StupidBot : MonoBehaviour
         instanceBullet.GetComponent<Bullet>().transformY = directionY;
         instanceBullet.GetComponent<Bullet>().parent = gameObject;
         instanceBullet.GetComponent<Bullet>().speed = speed * 2;
+        instanceBullet.GetComponent<Bullet>().damage = damage;
     }
     public void destroyObject()
     {

@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e226deaefbc417290e65205fa17374, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2.1
+  speed: 1.5
   charactorName: Bot
   damage: 1
   hp: 10

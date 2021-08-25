@@ -130,10 +130,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1194223748, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 71358433792477913, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -181,10 +177,6 @@ PrefabInstance:
     - target: {fileID: 71358433792477917, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
       propertyPath: m_Name
       value: Sheep (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 71358433792477917, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
@@ -310,10 +302,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StupidBot
       objectReference: {fileID: 0}
-    - target: {fileID: 4796480862547859909, guid: 32fb45b84fed940319a091892ed87e2b, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 32fb45b84fed940319a091892ed87e2b, type: 3}
 --- !u!1001 &71358433776647006
@@ -323,10 +311,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1194223748, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 71358433792477913, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -374,10 +358,6 @@ PrefabInstance:
     - target: {fileID: 71358433792477917, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
       propertyPath: m_Name
       value: Sheep
-      objectReference: {fileID: 0}
-    - target: {fileID: 71358433792477917, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c1bc4fd45aee413c90dc79e7968a138, type: 3}
@@ -542,10 +522,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3448757895992829628, guid: 8626234b823274ab4991bbe7c9cb23d7, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5218841179882106561, guid: 8626234b823274ab4991bbe7c9cb23d7, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -556,7 +532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5218841179882106561, guid: 8626234b823274ab4991bbe7c9cb23d7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.49
+      value: 4.21
       objectReference: {fileID: 0}
     - target: {fileID: 5218841179882106561, guid: 8626234b823274ab4991bbe7c9cb23d7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -603,10 +579,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 728078847, guid: 5af5830b1749b474092c4bad5152ea48, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7471893374112485762, guid: 5af5830b1749b474092c4bad5152ea48, type: 3}
       propertyPath: m_RootOrder
       value: 1

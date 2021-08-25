@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     public float damage = 5;
     public Animator anim;
     public GameObject parent;
+    public bool isDestroying = false;
 
     private void Awake()
     {
@@ -38,5 +39,15 @@ public class Bullet : MonoBehaviour
         transformX = 0;
         transformY = 0;
         anim.SetBool("isCollided", true);
+        isDestroying = true;
+        GetComponent<BoxCollider2D>().enabled = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "BackGroundBox")
+        {
+            OnAttack();
+        }
     }
 }

@@ -18,7 +18,6 @@ public class Animal : MonoBehaviour
 
     // Audio
     private AudioSource audioSource;
-    public AudioClip[] audioClips; // 0: shoot, 1: attacked, 2: destroy
     private void Awake()
     {
         anim.GetComponent<Animator>();
@@ -76,6 +75,7 @@ public class Animal : MonoBehaviour
                     transformY = 0;
                     transformX = 0;
                     anim.SetInteger("MoveState", randomAnimation);
+                    audioSource.Play();
                     break;
                 default:
                     transformY = 0;
@@ -94,17 +94,17 @@ public class Animal : MonoBehaviour
 
     private void OnAttacked(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Bullet")
+        if (collision.gameObject.tag == "Bullet" && !collision.gameObject.GetComponent<Bullet>().isDestroying)
         {
             currentHp = currentHp - collision.gameObject.GetComponent<Bullet>().damage;
             collision.gameObject.GetComponent<Bullet>().OnAttack();
             if (currentHp <= 0)
             {
-                //anim.SetInteger("tankState", 2);
+                anim.SetInteger("MoveState", 10);
                 isDie = true;
+                GetComponent<BoxCollider2D>().enabled = false;
                 //audioSource.clip = audioClips[2];
                 //audioSource.Play();
-                destroyObject();
             }
             else
             {
@@ -113,9 +113,7 @@ public class Animal : MonoBehaviour
             }
         }
     }
-
-    public void destroyObject()
-    {
-        Destroy(gameObject);
+    public void Die() {
+        anim.SetInteger("MoveState", 10);
     }
 }

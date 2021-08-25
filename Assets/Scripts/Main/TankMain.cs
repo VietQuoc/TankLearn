@@ -50,10 +50,17 @@ public class TankMain : MonoBehaviour
     }
 
     void OnKeyboardPress() {
-        Vector3 totalMovement = Vector3.zero;
-        
+        // Handle JoyStick
+        Vector3 movePosition = new Vector3(UltimateJoystick.GetHorizontalAxis("Movement"), UltimateJoystick.GetVerticalAxis("Movement"), 0);
+        if (movePosition.x > 0.5f) transformX = 1;
+        else if (movePosition.x < -0.5f) transformX = -1;
+        else transformX = 0;
 
+        if (movePosition.y > 0.5f) transformY = 1;
+        else if (movePosition.y < -0.5f) transformY = -1;
+        else transformY = 0;
 
+        // Handle Keyboard
         if (Input.GetKey(KeyCode.UpArrow))
         {
             transformY = 1;
@@ -136,6 +143,14 @@ public class TankMain : MonoBehaviour
                 audioSource.clip = audioClips[1];
                 audioSource.Play();
             }
+        }
+    }
+
+    public void OnTapAttack() {
+        if (Time.time > nextFire)
+        {
+            nextFire = Time.time + fireRate;
+            OnAttack();
         }
     }
 
